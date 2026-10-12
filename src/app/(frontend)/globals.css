@@ -1,0 +1,252 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-heading: var(--font-serif);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-libre), ui-serif, Georgia, serif;
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-ink: var(--accent-ink);
+  --color-bead: var(--bead);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/* Brand tokens: enkaji-content/brand/brand.md. Light theme only. */
+:root {
+  --primary: #1c380e;
+  --primary-soft: #2e5a1c;
+  --accent: #c4a050;
+  --accent-ink: #7a5c22;
+  --bead: #eee3c4;
+  --sand: #f7f1e1;
+  --ink: #1c1a17;
+
+  --background: #ffffff;
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+  --primary-foreground: var(--sand);
+  --secondary: var(--bead);
+  --secondary-foreground: var(--primary);
+  --accent-foreground: var(--primary);
+  --muted: var(--sand);
+  --muted-foreground: #5a554c;
+  --destructive: #b3261e;
+  --border: #ddd2b0;
+  --input: #ddd2b0;
+  --ring: var(--accent);
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-primary;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Rich text wrapper (Lexical output, markdown). */
+@layer components {
+  .prose-enkaji {
+    max-width: 65ch;
+    color: var(--ink);
+  }
+  .prose-enkaji > * + * {
+    margin-top: 1.1em;
+  }
+  .prose-enkaji h2,
+  .prose-enkaji h3,
+  .prose-enkaji h4 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 1.8em;
+    color: var(--primary);
+  }
+  .prose-enkaji h2 {
+    font-size: 1.75rem;
+  }
+  .prose-enkaji h3 {
+    font-size: 1.35rem;
+  }
+  .prose-enkaji h4 {
+    font-size: 1.1rem;
+  }
+  .prose-enkaji a {
+    color: var(--primary-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-enkaji a:hover {
+    color: var(--primary);
+  }
+  .prose-enkaji ul,
+  .prose-enkaji ol {
+    padding-left: 1.4em;
+  }
+  .prose-enkaji ul {
+    list-style: disc;
+  }
+  .prose-enkaji ol {
+    list-style: decimal;
+  }
+  .prose-enkaji li + li {
+    margin-top: 0.4em;
+  }
+  .prose-enkaji li::marker {
+    color: var(--accent-ink);
+  }
+  .prose-enkaji blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 1em;
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--primary);
+  }
+  .prose-enkaji img {
+    border-radius: var(--radius-lg);
+    max-width: 100%;
+    height: auto;
+  }
+  .prose-enkaji hr {
+    border-color: var(--border);
+    margin-block: 2em;
+  }
+  .prose-enkaji table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .prose-enkaji th,
+  .prose-enkaji td {
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+  .prose-enkaji th {
+    background: var(--sand);
+    color: var(--primary);
+  }
+}
+
+/* Home hero: the gold path of the logo draws in once. Pure CSS; static for reduced motion. */
+.hero-path-draw {
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: 0;
+  animation: hero-path-draw 1.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+}
+
+@keyframes hero-path-draw {
+  from {
+    stroke-dashoffset: var(--path-length);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-path-draw {
+    animation: none;
+  }
+}
+
+/* Long-form article (founder story): 68ch measure, serif headings, optional drop cap. */
+@layer components {
+  .prose-longform {
+    max-width: 68ch;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    font-size: 1.1875rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  @media (min-width: 640px) {
+    .prose-longform {
+      padding-inline: 0;
+    }
+  }
+  .prose-longform > p + p {
+    margin-top: 1.4em;
+  }
+  .prose-longform h2,
+  .prose-longform h3 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    color: var(--primary);
+  }
+  .prose-longform a {
+    color: var(--primary-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-longform.dropcap > p:first-child::first-letter {
+    float: left;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 0.85;
+    padding: 0.3rem 0.6rem 0 0;
+    color: var(--primary);
+  }
+}
+
+/* Paragraph spacing inside CMS rich text rendered by the RichText component. */
+@layer components {
+  .prose-enkaji .payload-richtext > * + * {
+    margin-top: 1.1em;
+  }
+}

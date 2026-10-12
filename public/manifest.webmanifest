@@ -1,0 +1,13 @@
+{
+  "name": "Enkaji Enkitati CBO",
+  "short_name": "Enkaji Enkitati",
+  "description": "Empowering Women, Sustaining Futures",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F1E1",
+  "theme_color": "#1C380E",
+  "icons": [
+    { "src": "/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

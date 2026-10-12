@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "welcome-to-enkaji-enkitati-cbo",
+    "title": "Welcome to Enkaji Enkitati CBO",
+    "category": "News",
+    "publishedAt": "2026-07-06",
+    "program": "governance",
+    "body": [
+      "Enkaji Enkitati CBO was formally established in July 2026 by women from Ewaso Ng'iro, Narok County, who share one goal: stronger women, girls in school, and households that can withstand hard times.",
+      "Our members adopted a constitution and elected an executive committee led by Chairperson Caren Naeku Dapash. We work through five programs: women's economic empowerment, girls' dignity and health, education and mentorship, community development, and support for vulnerable households.",
+      "This website is where we will share our work, our events and the ways you can stand with us."
+    ],
+    "isPlaceholder": true
+  },
+  {
+    "slug": "our-first-table-banking-cycle",
+    "title": "Our first table banking cycle has begun",
+    "category": "Stories",
+    "publishedAt": "2026-08-03",
+    "program": "women-economic-empowerment",
+    "body": [
+      "Savings change lives slowly and surely. At our first VSLA meeting, members agreed how much to save each week, how loans will be approved and how profits will be shared at the end of the cycle.",
+      "Every contribution is recorded openly and two witnesses are present whenever money is handled. Members can borrow for school fees, stock for a small business or an emergency, and the interest grows the group fund for everyone."
+    ],
+    "isPlaceholder": true
+  },
+  {
+    "slug": "a-pad-can-keep-a-girl-in-school",
+    "title": "A pad can keep a girl in school",
+    "category": "Stories",
+    "publishedAt": "2026-05-30",
+    "program": "girls-dignity-and-health",
+    "body": [
+      "On Menstrual Hygiene Day we sat with girls and boys to talk openly about periods. Many girls said it was the first time anyone had explained menstruation to them.",
+      "We handed out dignity packs and reminded everyone that periods are natural, not shameful. No girl should miss school because she cannot afford a pad."
+    ],
+    "isPlaceholder": true
+  },
+  {
+    "slug": "day-of-the-african-child-2026-recap",
+    "title": "Every child deserves clean water, dignity and opportunity",
+    "category": "News",
+    "publishedAt": "2026-06-18",
+    "program": "education-and-mentorship",
+    "body": [
+      "This year's Day of the African Child focused on water, sanitation and hygiene for every child. Our celebration combined mentorship talks, a menstrual health session, a handwashing demonstration and performances by the children.",
+      "To our girls: your dreams are valid. To our boys: your leadership matters in building a community that protects every child."
+    ],
+    "isPlaceholder": true
+  }
+]

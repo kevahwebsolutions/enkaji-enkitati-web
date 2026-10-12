@@ -1,0 +1,92 @@
+[
+  {
+    "date": "01-24",
+    "name": "International Day of Education",
+    "program": "education-and-mentorship",
+    "suggestedActivity": "School mentorship, career talks, book donation drives"
+  },
+  {
+    "date": "02-06",
+    "name": "International Day of Zero Tolerance for FGM",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "Community dialogues and anti-FGM campaigns"
+  },
+  {
+    "date": "03-08",
+    "name": "International Women's Day",
+    "program": "women-economic-empowerment",
+    "suggestedActivity": "Women's forum, business training, leadership"
+  },
+  {
+    "date": "04-07",
+    "name": "World Health Day",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "Health awareness walk and outreach"
+  },
+  {
+    "date": "05-25",
+    "name": "Africa Day",
+    "program": "community-development",
+    "suggestedActivity": "Cultural celebration and Maasai heritage showcase"
+  },
+  {
+    "date": "05-28",
+    "name": "Menstrual Hygiene Day",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "Sanitary towel distribution and school sensitization"
+  },
+  {
+    "date": "06-05",
+    "name": "World Environment Day",
+    "program": "community-development",
+    "suggestedActivity": "Tree planting and clean-up"
+  },
+  {
+    "date": "06-16",
+    "name": "Day of the African Child",
+    "program": "education-and-mentorship",
+    "suggestedActivity": "Children's forum, talent day, mentorship"
+  },
+  {
+    "date": "08-12",
+    "name": "International Youth Day",
+    "program": "education-and-mentorship",
+    "suggestedActivity": "Youth summit and entrepreneurship training"
+  },
+  {
+    "date": "09-21",
+    "name": "International Day of Peace",
+    "program": "community-development",
+    "suggestedActivity": "Peace walk and community dialogue"
+  },
+  {
+    "date": "10-11",
+    "name": "International Day of the Girl Child",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "Girls' leadership and mentorship"
+  },
+  {
+    "date": "10-15",
+    "name": "International Day of Rural Women",
+    "program": "women-economic-empowerment",
+    "suggestedActivity": "Women's products exhibition and savings group training"
+  },
+  {
+    "date": "11-25",
+    "name": "16 Days of Activism Against GBV (to 10 Dec)",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "Awareness walks and school outreach"
+  },
+  {
+    "date": "12-01",
+    "name": "World AIDS Day",
+    "program": "girls-dignity-and-health",
+    "suggestedActivity": "HIV awareness"
+  },
+  {
+    "date": "12-05",
+    "name": "International Volunteer Day",
+    "program": "get-involved",
+    "suggestedActivity": "Volunteer appreciation and recruitment"
+  }
+]
