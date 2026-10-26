@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enkaji Enkitati CBO</title>
+<style>
+@font-face{font-family:'Inter';font-weight:400;src:url('assets/fonts/Inter-400.ttf') format('truetype');}
+@font-face{font-family:'Inter';font-weight:600;src:url('assets/fonts/Inter-600.ttf') format('truetype');}
+@font-face{font-family:'Libre Baskerville';font-weight:400;src:url('assets/fonts/LibreBaskerville-400.ttf') format('truetype');}
+@font-face{font-family:'Libre Baskerville';font-weight:700;src:url('assets/fonts/LibreBaskerville-700.ttf') format('truetype');}
+:root{--primary:#1C380E;--soft:#2E5A1C;--gold:#C4A050;--gold-ink:#7A5C22;--bead:#EEE3C4;--sand:#F7F1E1;--ink:#1C1A17;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;background:var(--primary);overflow:hidden;}
+#root{position:relative;width:1920px;height:1080px;background:var(--primary);font-family:'Inter',sans-serif;}
+.scene{opacity:0;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.green{background:var(--primary);color:var(--bead);}
+.sandbg{background:var(--sand);color:var(--primary);}
+.eyebrow{font-family:'Libre Baskerville',serif;font-size:30px;letter-spacing:0.28em;text-transform:uppercase;}
+.h1{font-family:'Libre Baskerville',serif;font-weight:700;font-size:112px;line-height:1.18;text-align:center;}
+.rule{height:6px;background:var(--gold);width:0;margin-top:48px;}
+.logo{width:420px;height:420px;}
+.row{display:flex;align-items:center;gap:90px;}
+.txt h2{font-family:'Libre Baskerville',serif;font-weight:700;font-size:84px;line-height:1.15;}
+.txt p{font-size:44px;line-height:1.4;margin-top:30px;max-width:900px;}
+.cards{display:flex;gap:28px;margin-top:70px;}
+.card{width:332px;height:300px;background:var(--bead);border-top:10px solid var(--gold);padding:36px 22px;display:flex;flex-direction:column;justify-content:space-between;}
+.card .n{font-family:'Libre Baskerville',serif;font-size:30px;color:var(--gold-ink);letter-spacing:0.2em;}
+.card .t{font-family:'Libre Baskerville',serif;font-weight:700;font-size:35px;line-height:1.2;color:var(--primary);}
+.h2c{font-family:'Libre Baskerville',serif;font-weight:700;font-size:92px;text-align:center;line-height:1.2;max-width:1500px;}
+.sub{font-size:42px;line-height:1.4;text-align:center;max-width:1300px;margin-top:44px;}
+.btns{display:flex;gap:30px;margin-top:56px;}
+.btn{font-family:'Inter',sans-serif;font-weight:600;font-size:40px;padding:26px 60px;}
+.donate{background:var(--gold);color:var(--primary);}
+.partner{border:3px solid var(--bead);color:var(--bead);}
+.url{font-size:38px;letter-spacing:0.08em;margin-top:44px;color:var(--bead);}
+.wipe{position:absolute;top:0;left:0;width:1920px;height:1080px;background:var(--gold);transform:translateX(-1920px);}
+.w{display:inline-block;}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-start="0" data-duration="20.5">
+
+<audio id="music" src="assets/music/happy-beats-business-moves-vol-1-by-ende-dot-app.mp3" data-start="0" data-duration="20.5" data-track-index="0" data-volume="0.45" data-fade-in="1" data-fade-out="1.5"></audio>
+
+<div id="s1" class="scene green clip" style="opacity:1" data-start="0" data-duration="3.8" data-track-index="1">
+  <div class="eyebrow" id="s1e" style="color:#C4A050">Narok County, Kenya</div>
+  <div class="h1" id="s1h" style="margin-top:36px"><span class="w">Empowering</span> <span class="w">Women,</span><br><span class="w">Sustaining</span> <span class="w">Futures</span></div>
+  <div class="rule" id="s1r"></div>
+</div>
+
+<div id="s2" class="scene green clip" data-start="3.5" data-duration="3.3" data-track-index="2">
+  <div class="row">
+    <img class="logo" id="s2l" src="assets/logo-mark-cream.png" alt="">
+    <div class="txt" id="s2t">
+      <h2>Enkaji Enkitati CBO</h2>
+      <p>A women-led community organization in Ewaso Ng’iro</p>
+    </div>
+  </div>
+</div>
+
+<div id="s3" class="scene sandbg clip" data-start="6.5" data-duration="5.7" data-track-index="3">
+  <div class="eyebrow" id="s3e" style="color:#7A5C22">Our programs</div>
+  <div class="cards">
+    <div class="card" id="c1"><div class="n">01</div><div class="t">Women Economic Empowerment</div></div>
+    <div class="card" id="c2"><div class="n">02</div><div class="t">Education and Mentorship</div></div>
+    <div class="card" id="c3"><div class="n">03</div><div class="t">Girls’ Dignity and Health</div></div>
+    <div class="card" id="c4"><div class="n">04</div><div class="t">Vulnerable Households</div></div>
+    <div class="card" id="c5"><div class="n">05</div><div class="t">Community Development</div></div>
+  </div>
+</div>
+
+<div id="s4" class="scene green clip" data-start="11.9" data-duration="4.3" data-track-index="4">
+  <div class="h2c" id="s4h">Lasting change starts at the grassroots.</div>
+  <div class="sub" id="s4s">Communities name their own problems and lead their own solutions.</div>
+</div>
+
+<div id="s5" class="scene green clip" data-start="16" data-duration="4.5" data-track-index="5">
+  <img class="logo" id="s5l" src="assets/logo-mark-cream.png" alt="" style="width:300px;height:300px">
+  <div class="h1" id="s5h" style="font-size:84px;margin-top:10px">Enkaji Enkitati CBO</div>
+  <div class="btns" id="s5b"><div class="btn donate">Donate</div><div class="btn partner">Partner with us</div></div>
+  <div class="url" id="s5u">enkajienkitaticbo.org</div>
+</div>
+
+<div class="wipe clip" id="wipe" data-start="15.5" data-duration="1.5" data-track-index="6"></div>
+
+<script src="assets/gsap.min.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const E = "power2.out";
+// Scene 1: hook
+tl.fromTo("#s1h .w", { y: 18 }, { y: 0, duration: 0.6, ease: E, stagger: 0.15 }, 0);
+tl.fromTo("#s1r", { width: 0 }, { width: 640, duration: 0.8, ease: "power2.inOut" }, 1.4);
+tl.to("#s1", { opacity: 0, duration: 0.3, ease: "power1.in" }, 3.5);
+// Scene 2: who we are
+tl.fromTo("#s2", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 3.5);
+tl.fromTo("#s2l", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.6, ease: E }, 3.7);
+tl.fromTo("#s2t", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, 4.0);
+tl.to("#s2", { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.5);
+// Scene 3: programs (beat-grid: 7.02, 7.52, 8.02, 8.52, 9.02)
+tl.fromTo("#s3", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.5);
+tl.fromTo("#s3e", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 6.7);
+["#c1", "#c2", "#c3", "#c4", "#c5"].forEach((id, i) => {
+  tl.fromTo(id, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 7.02 + i * 0.5); // beat-grid
+});
+tl.to("#s3", { opacity: 0, duration: 0.3, ease: "power1.in" }, 11.9);
+// Scene 4: grassroots
+tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 11.9);
+tl.fromTo("#s4h", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 12.1);
+tl.fromTo("#s4s", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: E }, 12.3);
+// Gold wipe locked to the 16.02s strong cue
+tl.fromTo("#wipe", { x: -1920 }, { x: 0, duration: 0.5, ease: "power2.in" }, 15.5); // beat-locked: 16.02s
+tl.to("#wipe", { x: 1920, duration: 0.5, ease: "power2.out" }, 16.02);
+// Scene 5: outro
+tl.fromTo("#s5", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 16.0);
+tl.fromTo("#s5l", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.6, ease: E }, 16.3);
+tl.fromTo("#s5h", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 16.7);
+tl.fromTo("#s5b", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 17.3);
+tl.fromTo("#s5u", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: E }, 17.9);
+window.__timelines = window.__timelines || {};
+window.__timelines["root"] = tl;
+</script>
+</div>
+</body>
+</html>
